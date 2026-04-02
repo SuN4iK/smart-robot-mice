@@ -8,10 +8,11 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
 
 WorldInfo {
+  basicTimeStep 16
 }
 Viewpoint {
-  orientation 0.7153601759272249 -0.006738899374945834 -0.6987234116104771 3.102226266797645
-  position -3.6489148950989563 0.10218865192910112 6.07928825320828
+  orientation 0.7350498322425807 -0.0046206871201343765 -0.6779973402386561 3.1261905460035733
+  position 7.470107365823083 0.03505638111453239 4.860858581040908
   follow "e-puck"
 }
 TexturedBackground {
@@ -19,8 +20,9 @@ TexturedBackground {
 TexturedBackgroundLight {
 }
 RectangleArena {
-  translation 1.35 -0.0600065 0.01
+  translation 1.35 -0.05001 0.01
   rotation 9.58977e-09 -1.4931e-14 1 3.14159
+  name "rectangle arena(5)"
   floorSize 14.3 1.3
   floorTileSize 1.2 1.8
   floorAppearance PBRAppearance {
@@ -34,15 +36,15 @@ RectangleArena {
   }
 }
 SolidBox {
-  translation 7.33 -0.139976 0.02
+  translation 7.18 -0.329976 0.02
   rotation 0 0 -1 -5.307179586466759e-06
-  name "box(33)"
+  name "box(35)"
   size 0.5 0.03 0.3
 }
 SolidBox {
-  translation 7.18 -0.319976 0.02
+  translation 7.33 -0.149976 0.02
   rotation 0 0 -1 -5.307179586466759e-06
-  name "box(35)"
+  name "box(33)"
   size 0.5 0.03 0.3
 }
 SolidBox {
@@ -820,12 +822,6 @@ SolidBox {
   size 0.53 0.03 0.3
 }
 SolidBox {
-  translation 0.62 0.060001 0.02
-  rotation 0 0 1 -1.5707953071795862
-  name "box(20)"
-  size 1.1 0.03 0.3
-}
-SolidBox {
   translation -0.25 -0.359999 0.02
   rotation 0 0 1 -1.5707953071795862
   name "box(12)"
@@ -838,18 +834,12 @@ SolidBox {
   size 0.3 0.03 0.3
 }
 DEF E_PUCK E-puck {
-  hidden linearVelocity_0 -0.04426344882213028 -0.04376095508717412 0.0005635888352488649
-  hidden angularVelocity_0 -0.0306466050432164 -0.022247702502635722 -1.37538984201649
-  hidden translation_1 0 0.026000000000000006 0.02
-  hidden rotation_1 0 1 0 0.0738672426638616
-  hidden linearVelocity_1 -0.06791660780852941 -0.06559026141063619 -5.26716591971329e-05
-  hidden angularVelocity_1 3.574883697631647 -3.487831805236181 -1.3287624895591261
-  hidden translation_2 0 -0.026000000000000006 0.02
-  hidden rotation_2 0 -1 0 5.10405940287105
-  hidden linearVelocity_2 -0.018007069439581795 -0.01861394278511633 1.9271675680476616e-05
-  hidden angularVelocity_2 3.710225968759811 -3.34127650508712 -1.3284858078991981
-  translation 8.372958244795251 0.5516328961373824 0.009885991499641662
-  rotation -0.0003351755079902839 0.0003718981256915012 0.9999998746745736 -2.3604429546845114
+  hidden position_0_0 1769.6790158853146
+  hidden position_0_1 1744.1098988910824
+  hidden rotation_1 0 -1 0 2.1792407393288027
+  hidden rotation_2 0 -1 0 2.615616504842674
+  translation 8.43819 0.0222743 0.0163481
+  rotation -0.00011787005497784935 -0.0010262804786855624 0.9999994664273724 2.9066
   controller "my_controller"
   window "botstudio"
   camera_width 40

@@ -1,1 +1,3 @@
 controllers/my_controller/build
+controllers/my_controller/my_controller
+worlds/.*

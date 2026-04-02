@@ -1,0 +1,4175 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.6330639624007595 -0.015938990532754715 -0.7739353772055174 3.152783857911766
+  position 9.593866162647968 7.420532273800715 14.987908041814862
+  follow "epuck_random"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 1.35 1.78999 0.01
+  rotation 9.58977e-09 -1.4931e-14 1 3.14159
+  name "rectangle arena(1)"
+  floorSize 14.3 1.3
+  floorTileSize 1.2 1.8
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "white_arena.png"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+RectangleArena {
+  translation 1.35 -0.05001 0.01
+  rotation 9.58977e-09 -1.4931e-14 1 3.14159
+  name "rectangle arena(5)"
+  floorSize 14.3 1.3
+  floorTileSize 1.2 1.8
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "white_arena.png"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+RectangleArena {
+  translation 1.35 3.63999 0.01
+  rotation 9.58977e-09 -1.4931e-14 1 3.14159
+  name "rectangle arena(2)"
+  floorSize 14.3 1.3
+  floorTileSize 1.2 1.8
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "white_arena.png"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+RectangleArena {
+  translation 1.35 5.51999 0.01
+  rotation 9.58977e-09 -1.4931e-14 1 3.14159
+  name "rectangle arena(3)"
+  floorSize 14.3 1.3
+  floorTileSize 1.2 1.8
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "white_arena.png"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+RectangleArena {
+  translation 1.35 7.39999 0.01
+  rotation 9.58977e-09 -1.4931e-14 1 3.14159
+  name "rectangle arena(4)"
+  floorSize 14.3 1.3
+  floorTileSize 1.2 1.8
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "white_arena.png"
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+SolidBox {
+  translation 7.18 -0.329976 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(35)_0"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.33 -0.149976 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(33)_0"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.87 -0.139979 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(44)_0"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.66 -0.439979 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(50)_0"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.69 -0.699979 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(51)_0"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation 4.31 -0.699979 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(53)_0"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation 4.87 0.060021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(45)_0"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.92 0.290013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(58)_0"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.5 0.290013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(62)_0"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.69 0.120013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(59)_0"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.34 -0.129987 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(61)_0"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation 4.52 0.450018 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(47)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 4.3 0.120017 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(54)_0"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation 7.38 0.580024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(39)_0"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 7.34 -0.549976 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(36)_0"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.09 0.14003 0.02
+  rotation 0 0 1 1.5708
+  name "box(32)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.09 -0.63997 0.02
+  rotation 0 0 1 1.5708
+  name "box(38)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 7.33 0.430024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(31)_0"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.58 0.14003 0.02
+  rotation 0 0 1 1.5708
+  name "box(30)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.58 -0.33997 0.02
+  rotation 0 0 1 1.5708
+  name "box(34)_0"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation 8.04 0.070031 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(27)_0"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.93 -0.13997 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(28)_0"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 6.95 0.13003 0.02
+  rotation 0 0 1 1.5708
+  name "box(37)_0"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 8.29 -0.41997 0.02
+  rotation 0 0 1 1.5708
+  name "box(26)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 5.11 -0.419977 0.02
+  rotation 0 0 1 1.5708
+  name "box(40)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.23 -0.419979 0.02
+  rotation 0 0 1 1.5708
+  name "box(42)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -2.6 -0.419979 0.02
+  rotation 0 0 1 1.5708
+  name "box(63)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.26 0.350021 0.02
+  rotation 0 0 1 1.5708
+  name "box(43)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -2.6 0.350021 0.02
+  rotation 0 0 1 1.5708
+  name "box(64)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -4.44 -0.229979 0.02
+  rotation 0 0 1 1.5708
+  name "box(122)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 8.29 0.35003 0.02
+  rotation 0 0 1 1.5708
+  name "box(25)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 5.09 0.350019 0.02
+  rotation 0 0 1 1.5708
+  name "box(41)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.63 0.350019 0.02
+  rotation 0 0 1 1.5708
+  name "box(46)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.42 0.350019 0.02
+  rotation 0 0 1 1.5708
+  name "box(48)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.42 -0.149981 0.02
+  rotation 0 0 1 1.5708
+  name "box(49)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.18 -0.169981 0.02
+  rotation 0 0 1 1.5708
+  name "box(52)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.18 0.300019 0.02
+  rotation 0 0 1 1.5708
+  name "box(57)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.45 -0.169981 0.02
+  rotation 0 0 1 1.5708
+  name "box(60)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.95 -0.169981 0.02
+  rotation 0 0 1 1.5708
+  name "box(55)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.95 -0.409981 0.02
+  rotation 0 0 1 1.5708
+  name "box(56)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.81 0.35003 0.02
+  rotation 0 0 1 1.5708
+  name "box(29)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -0.02 0.6 0.02
+  rotation 0 0 1 -3.1415853071795863
+  name "box(1)_0"
+  size 2 0.03 0.3
+}
+SolidBox {
+  translation -0.019991 -0.7 0.02
+  rotation 0 0 1 -3.1415853071795863
+  name "box(2)_0"
+  size 2 0.03 0.3
+}
+SolidBox {
+  translation 0.970004 0.220001 0.02
+  rotation 0 0 1 1.5708
+  name "box(3)_0"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -1.01 -0.289999 0.02
+  rotation 0 0 1 1.5708
+  name "box(5)_0"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -0.76 0.030001 0.02
+  rotation 0 0 1 1.5708
+  name "box(7)_0"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -0.25 0.190002 0.02
+  rotation 0 0 1 1.5708
+  name "box(15)_0"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation 0.970004 -0.509999 0.02
+  rotation 0 0 1 1.5708
+  name "box(4)_0"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation -1.01 0.460001 0.02
+  rotation 0 0 1 1.5708
+  name "box(6)_0"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation -2.94 -0.419999 0.02
+  rotation 0 0 1 1.5708
+  name "box(67)_0"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation -0.62 0.410001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(8)_0"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation -0.55 -0.529999 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(10)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -0.15 -0.189999 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(11)_0"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.089999 0.390001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(16)_0"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.089998 -0.009999 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(17)_0"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.19 0.190001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(18)_0"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 0.87 -0.159999 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(21)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 0.87 -0.319999 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(22)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.69 -0.130007 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(65)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 -0.130007 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(69)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 -0.130007 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(90)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.25 0.049991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(73)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 0.049989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(114)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.25 0.229991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(74)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.26 0.229991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(88)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.62 0.229991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(83)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.8 0.229991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(96)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 0.229991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(103)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 0.409991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(104)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.97 0.029989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(102)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.97 -0.340011 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(119)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 -0.520011 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(121)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.88 -0.060011 0.02
+  rotation 0 0 1 1.5708
+  name "box(107)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 -0.430011 0.02
+  rotation 0 0 1 1.5708
+  name "box(118)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 -0.610011 0.02
+  rotation 0 0 1 1.5708
+  name "box(126)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 -0.240011 0.02
+  rotation 0 0 1 1.5708
+  name "box(127)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 -0.040011 0.02
+  rotation 0 0 1 1.5708
+  name "box(128)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 0.159989 0.02
+  rotation 0 0 1 1.5708
+  name "box(129)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 0.359989 0.02
+  rotation 0 0 1 1.5708
+  name "box(131)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 0.499989 0.02
+  rotation 0 0 1 1.5708
+  name "box(133)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 -0.060011 0.02
+  rotation 0 0 1 1.5708
+  name "box(117)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 -0.260011 0.02
+  rotation 0 0 1 1.5708
+  name "box(106)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 -0.440011 0.02
+  rotation 0 0 1 1.5708
+  name "box(120)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.16 -0.150009 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(99)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 -0.150009 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(123)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 0.049991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(130)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 0.259991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(132)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.52 0.409991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(134)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 -0.340009 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(124)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 -0.520009 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(125)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.79 -0.150009 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(108)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.8 0.409991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(95)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.63 0.229991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(84)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.87 0.239991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(75)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.87 0.429991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(76)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.06 0.429991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(79)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 0.409991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(82)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.55 0.409991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(80)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.63 0.409991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(85)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 -0.310007 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(70)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 -0.330007 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(116)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.23 -0.330007 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(115)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 -0.330007 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(94)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 -0.530007 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(113)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.95 -0.040007 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(71)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.78 0.159993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(77)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.16 0.329993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(78)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.72 0.139993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(86)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.71 -0.240007 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(109)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.71 -0.430007 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(110)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.87 -0.430007 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(111)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.87 -0.610007 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(112)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 0.319993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(97)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 0.119993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(101)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 0.499993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(98)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.44 0.319993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(105)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 0.139993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(100)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.53 0.139993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(87)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 -0.040007 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(89)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 -0.240007 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(91)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 -0.620007 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(92)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.5 0.499993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(81)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.13 -0.220007 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(72)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.69 -0.320007 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(66)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.84 -0.530007 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(68)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.23 -0.530007 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(93)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 0.87 -0.509999 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(23)_0"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -0.47 0.300001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(9)_0"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 0.21 -0.429999 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(14)_0"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation 0.42 -0.449999 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(19)_0"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation 0.78 0.090001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(24)_0"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation -0.25 -0.359999 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(12)_0"
+  size 0.35 0.03 0.3
+}
+SolidBox {
+  translation -0.06 -0.559999 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(13)_0"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation 7.18 1.530024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(35)_1"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.33 1.710024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(33)_1"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.87 1.720021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(44)_1"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.66 1.420021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(50)_1"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.69 1.160021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(51)_1"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation 4.31 1.160021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(53)_1"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation 4.87 1.920021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(45)_1"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.92 2.150013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(58)_1"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.5 2.150013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(62)_1"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.69 1.980013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(59)_1"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.34 1.730013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(61)_1"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation 4.52 2.310018 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(47)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 4.3 1.980017 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(54)_1"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation 7.38 2.440024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(39)_1"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 7.34 1.310024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(36)_1"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.09 2.00003 0.02
+  rotation 0 0 1 1.5708
+  name "box(32)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.09 1.22003 0.02
+  rotation 0 0 1 1.5708
+  name "box(38)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 7.33 2.290024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(31)_1"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.58 2.00003 0.02
+  rotation 0 0 1 1.5708
+  name "box(30)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.58 1.52003 0.02
+  rotation 0 0 1 1.5708
+  name "box(34)_1"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation 8.04 1.930031 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(27)_1"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.93 1.72003 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(28)_1"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 6.95 1.99003 0.02
+  rotation 0 0 1 1.5708
+  name "box(37)_1"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 8.29 1.44003 0.02
+  rotation 0 0 1 1.5708
+  name "box(26)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 5.11 1.440023 0.02
+  rotation 0 0 1 1.5708
+  name "box(40)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.23 1.440021 0.02
+  rotation 0 0 1 1.5708
+  name "box(42)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -2.6 1.440021 0.02
+  rotation 0 0 1 1.5708
+  name "box(63)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.26 2.210021 0.02
+  rotation 0 0 1 1.5708
+  name "box(43)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -2.6 2.210021 0.02
+  rotation 0 0 1 1.5708
+  name "box(64)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -4.44 1.630021 0.02
+  rotation 0 0 1 1.5708
+  name "box(122)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 8.29 2.21003 0.02
+  rotation 0 0 1 1.5708
+  name "box(25)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 5.09 2.210019 0.02
+  rotation 0 0 1 1.5708
+  name "box(41)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.63 2.210019 0.02
+  rotation 0 0 1 1.5708
+  name "box(46)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.42 2.210019 0.02
+  rotation 0 0 1 1.5708
+  name "box(48)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.42 1.710019 0.02
+  rotation 0 0 1 1.5708
+  name "box(49)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.18 1.690019 0.02
+  rotation 0 0 1 1.5708
+  name "box(52)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.18 2.160019 0.02
+  rotation 0 0 1 1.5708
+  name "box(57)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.45 1.690019 0.02
+  rotation 0 0 1 1.5708
+  name "box(60)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.95 1.690019 0.02
+  rotation 0 0 1 1.5708
+  name "box(55)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.95 1.450019 0.02
+  rotation 0 0 1 1.5708
+  name "box(56)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.81 2.21003 0.02
+  rotation 0 0 1 1.5708
+  name "box(29)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -0.02 2.46 0.02
+  rotation 0 0 1 -3.1415853071795863
+  name "box(1)_1"
+  size 2 0.03 0.3
+}
+SolidBox {
+  translation -0.019991 1.16 0.02
+  rotation 0 0 1 -3.1415853071795863
+  name "box(2)_1"
+  size 2 0.03 0.3
+}
+SolidBox {
+  translation 0.970004 2.080001 0.02
+  rotation 0 0 1 1.5708
+  name "box(3)_1"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -1.01 1.570001 0.02
+  rotation 0 0 1 1.5708
+  name "box(5)_1"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -0.76 1.890001 0.02
+  rotation 0 0 1 1.5708
+  name "box(7)_1"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -0.25 2.050002 0.02
+  rotation 0 0 1 1.5708
+  name "box(15)_1"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation 0.970004 1.350001 0.02
+  rotation 0 0 1 1.5708
+  name "box(4)_1"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation -1.01 2.320001 0.02
+  rotation 0 0 1 1.5708
+  name "box(6)_1"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation -2.94 1.440001 0.02
+  rotation 0 0 1 1.5708
+  name "box(67)_1"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation -0.62 2.270001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(8)_1"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation -0.55 1.330001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(10)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -0.15 1.670001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(11)_1"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.089999 2.250001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(16)_1"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.089998 1.850001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(17)_1"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.19 2.050001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(18)_1"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 0.87 1.700001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(21)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 0.87 1.540001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(22)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.69 1.729993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(65)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 1.729993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(69)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 1.729993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(90)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.25 1.909991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(73)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 1.909989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(114)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.25 2.089991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(74)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.26 2.089991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(88)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.62 2.089991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(83)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.8 2.089991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(96)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 2.089991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(103)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 2.269991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(104)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.97 1.889989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(102)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.97 1.519989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(119)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 1.339989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(121)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.88 1.799989 0.02
+  rotation 0 0 1 1.5708
+  name "box(107)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 1.429989 0.02
+  rotation 0 0 1 1.5708
+  name "box(118)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 1.249989 0.02
+  rotation 0 0 1 1.5708
+  name "box(126)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 1.619989 0.02
+  rotation 0 0 1 1.5708
+  name "box(127)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 1.819989 0.02
+  rotation 0 0 1 1.5708
+  name "box(128)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 2.019989 0.02
+  rotation 0 0 1 1.5708
+  name "box(129)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 2.219989 0.02
+  rotation 0 0 1 1.5708
+  name "box(131)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 2.359989 0.02
+  rotation 0 0 1 1.5708
+  name "box(133)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 1.799989 0.02
+  rotation 0 0 1 1.5708
+  name "box(117)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 1.599989 0.02
+  rotation 0 0 1 1.5708
+  name "box(106)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 1.419989 0.02
+  rotation 0 0 1 1.5708
+  name "box(120)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.16 1.709991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(99)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 1.709991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(123)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 1.909991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(130)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 2.119991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(132)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.52 2.269991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(134)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 1.519991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(124)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 1.339991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(125)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.79 1.709991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(108)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.8 2.269991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(95)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.63 2.089991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(84)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.87 2.099991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(75)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.87 2.289991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(76)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.06 2.289991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(79)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 2.269991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(82)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.55 2.269991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(80)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.63 2.269991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(85)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 1.549993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(70)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 1.529993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(116)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.23 1.529993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(115)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 1.529993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(94)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 1.329993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(113)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.95 1.819993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(71)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.78 2.019993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(77)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.16 2.189993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(78)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.72 1.999993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(86)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.71 1.619993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(109)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.71 1.429993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(110)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.87 1.429993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(111)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.87 1.249993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(112)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 2.179993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(97)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 1.979993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(101)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 2.359993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(98)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.44 2.179993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(105)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 1.999993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(100)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.53 1.999993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(87)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 1.819993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(89)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 1.619993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(91)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 1.239993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(92)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.5 2.359993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(81)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.13 1.639993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(72)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.69 1.539993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(66)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.84 1.329993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(68)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.23 1.329993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(93)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 0.87 1.350001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(23)_1"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -0.47 2.160001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(9)_1"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 0.21 1.430001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(14)_1"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation 0.42 1.410001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(19)_1"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation 0.78 1.950001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(24)_1"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation -0.25 1.500001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(12)_1"
+  size 0.35 0.03 0.3
+}
+SolidBox {
+  translation -0.06 1.300001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(13)_1"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation 7.18 3.390024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(35)_2"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.33 3.570024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(33)_2"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.87 3.580021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(44)_2"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.66 3.280021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(50)_2"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.69 3.020021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(51)_2"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation 4.31 3.020021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(53)_2"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation 4.87 3.780021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(45)_2"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.92 4.010013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(58)_2"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.5 4.010013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(62)_2"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.69 3.840013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(59)_2"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.34 3.590013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(61)_2"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation 4.52 4.170018 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(47)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 4.3 3.840017 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(54)_2"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation 7.38 4.300024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(39)_2"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 7.34 3.170024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(36)_2"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.09 3.86003 0.02
+  rotation 0 0 1 1.5708
+  name "box(32)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.09 3.08003 0.02
+  rotation 0 0 1 1.5708
+  name "box(38)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 7.33 4.150024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(31)_2"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.58 3.86003 0.02
+  rotation 0 0 1 1.5708
+  name "box(30)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.58 3.38003 0.02
+  rotation 0 0 1 1.5708
+  name "box(34)_2"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation 8.04 3.790031 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(27)_2"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.93 3.58003 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(28)_2"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 6.95 3.85003 0.02
+  rotation 0 0 1 1.5708
+  name "box(37)_2"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 8.29 3.30003 0.02
+  rotation 0 0 1 1.5708
+  name "box(26)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 5.11 3.300023 0.02
+  rotation 0 0 1 1.5708
+  name "box(40)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.23 3.300021 0.02
+  rotation 0 0 1 1.5708
+  name "box(42)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -2.6 3.300021 0.02
+  rotation 0 0 1 1.5708
+  name "box(63)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.26 4.070021 0.02
+  rotation 0 0 1 1.5708
+  name "box(43)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -2.6 4.070021 0.02
+  rotation 0 0 1 1.5708
+  name "box(64)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -4.44 3.490021 0.02
+  rotation 0 0 1 1.5708
+  name "box(122)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 8.29 4.07003 0.02
+  rotation 0 0 1 1.5708
+  name "box(25)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 5.09 4.070019 0.02
+  rotation 0 0 1 1.5708
+  name "box(41)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.63 4.070019 0.02
+  rotation 0 0 1 1.5708
+  name "box(46)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.42 4.070019 0.02
+  rotation 0 0 1 1.5708
+  name "box(48)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.42 3.570019 0.02
+  rotation 0 0 1 1.5708
+  name "box(49)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.18 3.550019 0.02
+  rotation 0 0 1 1.5708
+  name "box(52)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.18 4.020019 0.02
+  rotation 0 0 1 1.5708
+  name "box(57)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.45 3.550019 0.02
+  rotation 0 0 1 1.5708
+  name "box(60)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.95 3.550019 0.02
+  rotation 0 0 1 1.5708
+  name "box(55)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.95 3.310019 0.02
+  rotation 0 0 1 1.5708
+  name "box(56)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.81 4.07003 0.02
+  rotation 0 0 1 1.5708
+  name "box(29)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -0.02 4.32 0.02
+  rotation 0 0 1 -3.1415853071795863
+  name "box(1)_2"
+  size 2 0.03 0.3
+}
+SolidBox {
+  translation -0.019991 3.02 0.02
+  rotation 0 0 1 -3.1415853071795863
+  name "box(2)_2"
+  size 2 0.03 0.3
+}
+SolidBox {
+  translation 0.970004 3.940001 0.02
+  rotation 0 0 1 1.5708
+  name "box(3)_2"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -1.01 3.430001 0.02
+  rotation 0 0 1 1.5708
+  name "box(5)_2"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -0.76 3.750001 0.02
+  rotation 0 0 1 1.5708
+  name "box(7)_2"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -0.25 3.910002 0.02
+  rotation 0 0 1 1.5708
+  name "box(15)_2"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation 0.970004 3.210001 0.02
+  rotation 0 0 1 1.5708
+  name "box(4)_2"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation -1.01 4.180001 0.02
+  rotation 0 0 1 1.5708
+  name "box(6)_2"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation -2.94 3.300001 0.02
+  rotation 0 0 1 1.5708
+  name "box(67)_2"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation -0.62 4.130001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(8)_2"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation -0.55 3.190001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(10)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -0.15 3.530001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(11)_2"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.089999 4.110001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(16)_2"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.089998 3.710001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(17)_2"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.19 3.910001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(18)_2"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 0.87 3.560001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(21)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 0.87 3.400001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(22)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.69 3.589993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(65)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 3.589993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(69)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 3.589993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(90)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.25 3.769991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(73)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 3.769989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(114)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.25 3.949991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(74)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.26 3.949991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(88)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.62 3.949991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(83)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.8 3.949991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(96)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 3.949991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(103)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 4.129991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(104)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.97 3.749989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(102)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.97 3.379989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(119)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 3.199989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(121)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.88 3.659989 0.02
+  rotation 0 0 1 1.5708
+  name "box(107)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 3.289989 0.02
+  rotation 0 0 1 1.5708
+  name "box(118)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 3.109989 0.02
+  rotation 0 0 1 1.5708
+  name "box(126)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 3.479989 0.02
+  rotation 0 0 1 1.5708
+  name "box(127)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 3.679989 0.02
+  rotation 0 0 1 1.5708
+  name "box(128)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 3.879989 0.02
+  rotation 0 0 1 1.5708
+  name "box(129)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 4.079989 0.02
+  rotation 0 0 1 1.5708
+  name "box(131)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 4.219989 0.02
+  rotation 0 0 1 1.5708
+  name "box(133)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 3.659989 0.02
+  rotation 0 0 1 1.5708
+  name "box(117)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 3.459989 0.02
+  rotation 0 0 1 1.5708
+  name "box(106)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 3.279989 0.02
+  rotation 0 0 1 1.5708
+  name "box(120)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.16 3.569991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(99)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 3.569991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(123)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 3.769991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(130)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 3.979991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(132)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.52 4.129991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(134)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 3.379991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(124)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 3.199991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(125)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.79 3.569991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(108)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.8 4.129991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(95)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.63 3.949991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(84)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.87 3.959991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(75)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.87 4.149991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(76)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.06 4.149991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(79)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 4.129991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(82)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.55 4.129991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(80)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.63 4.129991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(85)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 3.409993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(70)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 3.389993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(116)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.23 3.389993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(115)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 3.389993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(94)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 3.189993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(113)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.95 3.679993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(71)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.78 3.879993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(77)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.16 4.049993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(78)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.72 3.859993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(86)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.71 3.479993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(109)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.71 3.289993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(110)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.87 3.289993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(111)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.87 3.109993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(112)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 4.039993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(97)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 3.839993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(101)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 4.219993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(98)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.44 4.039993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(105)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 3.859993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(100)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.53 3.859993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(87)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 3.679993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(89)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 3.479993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(91)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 3.099993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(92)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.5 4.219993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(81)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.13 3.499993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(72)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.69 3.399993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(66)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.84 3.189993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(68)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.23 3.189993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(93)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 0.87 3.210001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(23)_2"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -0.47 4.020001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(9)_2"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 0.21 3.290001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(14)_2"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation 0.42 3.270001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(19)_2"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation 0.78 3.810001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(24)_2"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation -0.25 3.360001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(12)_2"
+  size 0.35 0.03 0.3
+}
+SolidBox {
+  translation -0.06 3.160001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(13)_2"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation 7.18 5.250024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(35)_3"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.33 5.430024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(33)_3"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.87 5.440021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(44)_3"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.66 5.140021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(50)_3"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.69 4.880021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(51)_3"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation 4.31 4.880021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(53)_3"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation 4.87 5.640021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(45)_3"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.92 5.870013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(58)_3"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.5 5.870013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(62)_3"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.69 5.700013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(59)_3"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.34 5.450013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(61)_3"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation 4.52 6.030018 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(47)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 4.3 5.700017 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(54)_3"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation 7.38 6.160024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(39)_3"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 7.34 5.030024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(36)_3"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.09 5.72003 0.02
+  rotation 0 0 1 1.5708
+  name "box(32)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.09 4.94003 0.02
+  rotation 0 0 1 1.5708
+  name "box(38)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 7.33 6.010024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(31)_3"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.58 5.72003 0.02
+  rotation 0 0 1 1.5708
+  name "box(30)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.58 5.24003 0.02
+  rotation 0 0 1 1.5708
+  name "box(34)_3"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation 8.04 5.650031 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(27)_3"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.93 5.44003 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(28)_3"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 6.95 5.71003 0.02
+  rotation 0 0 1 1.5708
+  name "box(37)_3"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 8.29 5.16003 0.02
+  rotation 0 0 1 1.5708
+  name "box(26)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 5.11 5.160023 0.02
+  rotation 0 0 1 1.5708
+  name "box(40)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.23 5.160021 0.02
+  rotation 0 0 1 1.5708
+  name "box(42)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -2.6 5.160021 0.02
+  rotation 0 0 1 1.5708
+  name "box(63)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.26 5.930021 0.02
+  rotation 0 0 1 1.5708
+  name "box(43)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -2.6 5.930021 0.02
+  rotation 0 0 1 1.5708
+  name "box(64)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -4.44 5.350021 0.02
+  rotation 0 0 1 1.5708
+  name "box(122)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 8.29 5.93003 0.02
+  rotation 0 0 1 1.5708
+  name "box(25)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 5.09 5.930019 0.02
+  rotation 0 0 1 1.5708
+  name "box(41)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.63 5.930019 0.02
+  rotation 0 0 1 1.5708
+  name "box(46)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.42 5.930019 0.02
+  rotation 0 0 1 1.5708
+  name "box(48)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.42 5.430019 0.02
+  rotation 0 0 1 1.5708
+  name "box(49)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.18 5.410019 0.02
+  rotation 0 0 1 1.5708
+  name "box(52)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.18 5.880019 0.02
+  rotation 0 0 1 1.5708
+  name "box(57)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.45 5.410019 0.02
+  rotation 0 0 1 1.5708
+  name "box(60)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.95 5.410019 0.02
+  rotation 0 0 1 1.5708
+  name "box(55)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.95 5.170019 0.02
+  rotation 0 0 1 1.5708
+  name "box(56)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.81 5.93003 0.02
+  rotation 0 0 1 1.5708
+  name "box(29)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -0.02 6.18 0.02
+  rotation 0 0 1 -3.1415853071795863
+  name "box(1)_3"
+  size 2 0.03 0.3
+}
+SolidBox {
+  translation -0.019991 4.88 0.02
+  rotation 0 0 1 -3.1415853071795863
+  name "box(2)_3"
+  size 2 0.03 0.3
+}
+SolidBox {
+  translation 0.970004 5.800001 0.02
+  rotation 0 0 1 1.5708
+  name "box(3)_3"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -1.01 5.290001 0.02
+  rotation 0 0 1 1.5708
+  name "box(5)_3"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -0.76 5.610001 0.02
+  rotation 0 0 1 1.5708
+  name "box(7)_3"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -0.25 5.770002 0.02
+  rotation 0 0 1 1.5708
+  name "box(15)_3"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation 0.970004 5.070001 0.02
+  rotation 0 0 1 1.5708
+  name "box(4)_3"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation -1.01 6.040001 0.02
+  rotation 0 0 1 1.5708
+  name "box(6)_3"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation -2.94 5.160001 0.02
+  rotation 0 0 1 1.5708
+  name "box(67)_3"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation -0.62 5.990001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(8)_3"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation -0.55 5.050001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(10)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -0.15 5.390001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(11)_3"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.089999 5.970001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(16)_3"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.089998 5.570001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(17)_3"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.19 5.770001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(18)_3"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 0.87 5.420001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(21)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 0.87 5.260001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(22)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.69 5.449993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(65)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 5.449993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(69)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 5.449993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(90)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.25 5.629991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(73)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 5.629989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(114)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.25 5.809991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(74)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.26 5.809991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(88)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.62 5.809991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(83)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.8 5.809991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(96)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 5.809991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(103)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 5.989991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(104)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.97 5.609989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(102)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.97 5.239989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(119)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 5.059989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(121)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.88 5.519989 0.02
+  rotation 0 0 1 1.5708
+  name "box(107)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 5.149989 0.02
+  rotation 0 0 1 1.5708
+  name "box(118)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 4.969989 0.02
+  rotation 0 0 1 1.5708
+  name "box(126)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 5.339989 0.02
+  rotation 0 0 1 1.5708
+  name "box(127)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 5.539989 0.02
+  rotation 0 0 1 1.5708
+  name "box(128)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 5.739989 0.02
+  rotation 0 0 1 1.5708
+  name "box(129)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 5.939989 0.02
+  rotation 0 0 1 1.5708
+  name "box(131)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 6.079989 0.02
+  rotation 0 0 1 1.5708
+  name "box(133)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 5.519989 0.02
+  rotation 0 0 1 1.5708
+  name "box(117)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 5.319989 0.02
+  rotation 0 0 1 1.5708
+  name "box(106)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 5.139989 0.02
+  rotation 0 0 1 1.5708
+  name "box(120)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.16 5.429991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(99)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 5.429991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(123)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 5.629991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(130)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 5.839991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(132)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.52 5.989991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(134)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 5.239991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(124)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 5.059991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(125)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.79 5.429991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(108)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.8 5.989991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(95)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.63 5.809991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(84)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.87 5.819991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(75)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.87 6.009991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(76)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.06 6.009991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(79)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 5.989991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(82)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.55 5.989991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(80)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.63 5.989991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(85)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 5.269993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(70)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 5.249993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(116)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.23 5.249993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(115)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 5.249993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(94)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 5.049993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(113)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.95 5.539993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(71)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.78 5.739993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(77)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.16 5.909993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(78)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.72 5.719993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(86)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.71 5.339993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(109)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.71 5.149993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(110)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.87 5.149993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(111)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.87 4.969993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(112)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 5.899993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(97)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 5.699993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(101)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 6.079993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(98)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.44 5.899993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(105)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 5.719993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(100)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.53 5.719993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(87)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 5.539993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(89)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 5.339993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(91)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 4.959993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(92)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.5 6.079993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(81)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.13 5.359993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(72)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.69 5.259993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(66)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.84 5.049993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(68)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.23 5.049993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(93)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 0.87 5.070001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(23)_3"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -0.47 5.880001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(9)_3"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 0.21 5.150001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(14)_3"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation 0.42 5.130001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(19)_3"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation 0.78 5.670001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(24)_3"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation -0.25 5.220001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(12)_3"
+  size 0.35 0.03 0.3
+}
+SolidBox {
+  translation -0.06 5.020001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(13)_3"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation 7.18 7.110024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(35)_4"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.33 7.290024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(33)_4"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.87 7.300021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(44)_4"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.66 7.000021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(50)_4"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 4.69 6.740021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(51)_4"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation 4.31 6.740021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(53)_4"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation 4.87 7.500021 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(45)_4"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.92 7.730013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(58)_4"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.5 7.730013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(62)_4"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.69 7.560013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(59)_4"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 3.34 7.310013 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(61)_4"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation 4.52 7.890018 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(47)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 4.3 7.560017 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(54)_4"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation 7.38 8.020024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(39)_4"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 7.34 6.890024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(36)_4"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.09 7.58003 0.02
+  rotation 0 0 1 1.5708
+  name "box(32)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.09 6.80003 0.02
+  rotation 0 0 1 1.5708
+  name "box(38)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 7.33 7.870024 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(31)_4"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.58 7.58003 0.02
+  rotation 0 0 1 1.5708
+  name "box(30)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.58 7.10003 0.02
+  rotation 0 0 1 1.5708
+  name "box(34)_4"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation 8.04 7.510031 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(27)_4"
+  size 0.5 0.03 0.3
+}
+SolidBox {
+  translation 7.93 7.30003 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(28)_4"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 6.95 7.57003 0.02
+  rotation 0 0 1 1.5708
+  name "box(37)_4"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 8.29 7.02003 0.02
+  rotation 0 0 1 1.5708
+  name "box(26)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 5.11 7.020023 0.02
+  rotation 0 0 1 1.5708
+  name "box(40)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.23 7.020021 0.02
+  rotation 0 0 1 1.5708
+  name "box(42)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -2.6 7.020021 0.02
+  rotation 0 0 1 1.5708
+  name "box(63)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.26 7.790021 0.02
+  rotation 0 0 1 1.5708
+  name "box(43)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -2.6 7.790021 0.02
+  rotation 0 0 1 1.5708
+  name "box(64)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -4.44 7.210021 0.02
+  rotation 0 0 1 1.5708
+  name "box(122)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 8.29 7.79003 0.02
+  rotation 0 0 1 1.5708
+  name "box(25)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 5.09 7.790019 0.02
+  rotation 0 0 1 1.5708
+  name "box(41)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.63 7.790019 0.02
+  rotation 0 0 1 1.5708
+  name "box(46)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.42 7.790019 0.02
+  rotation 0 0 1 1.5708
+  name "box(48)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.42 7.290019 0.02
+  rotation 0 0 1 1.5708
+  name "box(49)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.18 7.270019 0.02
+  rotation 0 0 1 1.5708
+  name "box(52)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 4.18 7.740019 0.02
+  rotation 0 0 1 1.5708
+  name "box(57)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.45 7.270019 0.02
+  rotation 0 0 1 1.5708
+  name "box(60)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.95 7.270019 0.02
+  rotation 0 0 1 1.5708
+  name "box(55)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 3.95 7.030019 0.02
+  rotation 0 0 1 1.5708
+  name "box(56)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 7.81 7.79003 0.02
+  rotation 0 0 1 1.5708
+  name "box(29)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -0.02 8.04 0.02
+  rotation 0 0 1 -3.1415853071795863
+  name "box(1)_4"
+  size 2 0.03 0.3
+}
+SolidBox {
+  translation -0.019991 6.74 0.02
+  rotation 0 0 1 -3.1415853071795863
+  name "box(2)_4"
+  size 2 0.03 0.3
+}
+SolidBox {
+  translation 0.970004 7.660001 0.02
+  rotation 0 0 1 1.5708
+  name "box(3)_4"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -1.01 7.150001 0.02
+  rotation 0 0 1 1.5708
+  name "box(5)_4"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -0.76 7.470001 0.02
+  rotation 0 0 1 1.5708
+  name "box(7)_4"
+  size 0.8 0.03 0.3
+}
+SolidBox {
+  translation -0.25 7.630002 0.02
+  rotation 0 0 1 1.5708
+  name "box(15)_4"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation 0.970004 6.930001 0.02
+  rotation 0 0 1 1.5708
+  name "box(4)_4"
+  size 0.4 0.03 0.3
+}
+SolidBox {
+  translation -1.01 7.900001 0.02
+  rotation 0 0 1 1.5708
+  name "box(6)_4"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation -2.94 7.020001 0.02
+  rotation 0 0 1 1.5708
+  name "box(67)_4"
+  size 0.25 0.03 0.3
+}
+SolidBox {
+  translation -0.62 7.850001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(8)_4"
+  size 0.3 0.03 0.3
+}
+SolidBox {
+  translation -0.55 6.910001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(10)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation -0.15 7.250001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(11)_4"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.089999 7.830001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(16)_4"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.089998 7.430001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(17)_4"
+  size 0.7 0.03 0.3
+}
+SolidBox {
+  translation 0.19 7.630001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(18)_4"
+  size 0.9 0.03 0.3
+}
+SolidBox {
+  translation 0.87 7.280001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(21)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 0.87 7.120001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(22)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.69 7.309993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(65)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 7.309993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(69)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 7.309993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(90)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.25 7.489991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(73)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 7.489989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(114)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.25 7.669991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(74)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.26 7.669991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(88)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.62 7.669991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(83)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.8 7.669991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(96)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 7.669991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(103)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 7.849991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(104)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.97 7.469989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(102)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.97 7.099989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(119)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.35 6.919989 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(121)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.88 7.379989 0.02
+  rotation 0 0 1 1.5708
+  name "box(107)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 7.009989 0.02
+  rotation 0 0 1 1.5708
+  name "box(118)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 6.829989 0.02
+  rotation 0 0 1 1.5708
+  name "box(126)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 7.199989 0.02
+  rotation 0 0 1 1.5708
+  name "box(127)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 7.399989 0.02
+  rotation 0 0 1 1.5708
+  name "box(128)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 7.599989 0.02
+  rotation 0 0 1 1.5708
+  name "box(129)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 7.799989 0.02
+  rotation 0 0 1 1.5708
+  name "box(131)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.82 7.939989 0.02
+  rotation 0 0 1 1.5708
+  name "box(133)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 7.379989 0.02
+  rotation 0 0 1 1.5708
+  name "box(117)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 7.179989 0.02
+  rotation 0 0 1 1.5708
+  name "box(106)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 6.999989 0.02
+  rotation 0 0 1 1.5708
+  name "box(120)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.16 7.289991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(99)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 7.289991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(123)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 7.489991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(130)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 7.699991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(132)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.52 7.849991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(134)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 7.099991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(124)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.73 6.919991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(125)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.79 7.289991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(108)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.8 7.849991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(95)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.63 7.669991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(84)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.87 7.679991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(75)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.87 7.869991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(76)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.06 7.869991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(79)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 7.849991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(82)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.55 7.849991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(80)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.63 7.849991 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(85)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 7.129993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(70)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.04 7.109993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(116)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.23 7.109993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(115)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 7.109993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(94)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.43 6.909993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(113)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.95 7.399993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(71)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.78 7.599993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(77)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.16 7.769993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(78)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.72 7.579993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(86)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.71 7.199993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(109)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.71 7.009993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(110)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.87 7.009993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(111)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.87 6.829993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(112)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 7.759993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(97)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.06 7.559993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(101)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 7.939993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(98)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.44 7.759993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(105)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -4.26 7.579993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(100)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.53 7.579993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(87)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 7.399993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(89)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 7.199993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(91)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.34 6.819993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(92)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.5 7.939993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(81)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.13 7.219993 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(72)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.69 7.119993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(66)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -2.84 6.909993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(68)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -3.23 6.909993 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(93)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation 0.87 6.930001 0.02
+  rotation 0 0 -1 -5.307179586466759e-06
+  name "box(23)_4"
+  size 0.2 0.03 0.3
+}
+SolidBox {
+  translation -0.47 7.740001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(9)_4"
+  size 0.6 0.03 0.3
+}
+SolidBox {
+  translation 0.21 7.010001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(14)_4"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation 0.42 6.990001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(19)_4"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation 0.78 7.530001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(24)_4"
+  size 0.53 0.03 0.3
+}
+SolidBox {
+  translation -0.25 7.080001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(12)_4"
+  size 0.35 0.03 0.3
+}
+SolidBox {
+  translation -0.06 6.880001 0.02
+  rotation 0 0 1 -1.5707953071795862
+  name "box(13)_4"
+  size 0.3 0.03 0.3
+}
+DEF E_PUCK E-puck {
+  translation 8.45387 -0.0189931 0.0199362
+  rotation -0.0010448204745214223 -4.399591998142939e-06 0.9999994541652608 -3.109495307179586
+  name "epuck_random"
+  controller "my_controller"
+  window "botstudio"
+  camera_width 40
+  camera_height 1
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+    DistanceSensor {
+      name "distant"
+      type "sonar"
+    }
+  ]
+}
+DEF E_PUCK E-puck {
+  translation 8.45451 3.68596 0.0100335
+  rotation 0.0007427010242843575 0.0011760100384524152 0.9999990326973212 3.07878
+  name "epuck_wall"
+  controller "my_controller"
+  window "botstudio"
+  camera_width 40
+  camera_height 1
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+    DistanceSensor {
+      name "distant"
+      type "sonar"
+    }
+  ]
+}
+DEF E_PUCK E-puck {
+  translation 8.45814 5.56281 0.00989126
+  rotation 3.88827e-09 1.89145e-09 1 -3.0952853071795863
+  name "epuck_researcher"
+  controller "my_controller"
+  window "botstudio"
+  camera_width 40
+  camera_height 1
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+    DistanceSensor {
+      name "distant"
+      type "sonar"
+    }
+  ]
+}
+DEF E_PUCK E-puck {
+  translation 8.45381 1.84394 0.00989126
+  rotation 2.59651e-09 2.52174e-09 1 -3.0974553071795863
+  name "epuck_bruteforce"
+  controller "my_controller"
+  window "botstudio"
+  camera_width 40
+  camera_height 1
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+    DistanceSensor {
+      name "distant"
+      type "sonar"
+    }
+  ]
+}
+DEF E_PUCK E-puck {
+  translation 8.45583 7.42826 0.00988934
+  rotation 4.58897e-08 -4.6184e-09 1 -3.080425307179586
+  name "epuck_ai"
+  controller "my_controller"
+  window "botstudio"
+  camera_width 40
+  camera_height 1
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+    DistanceSensor {
+      name "distant"
+      type "sonar"
+    }
+  ]
+}
