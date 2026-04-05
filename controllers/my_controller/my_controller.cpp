@@ -5,33 +5,68 @@
 #include <webots/Motor.hpp>
 #include <webots/DistanceSensor.hpp>
 
+#include <algorithm>
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
+#include <map>
+#include <string>
+#include <vector>
 
 using namespace webots;
 
-// Перечень алгоритмов.
+// Перечисление алгоритмов
 enum Algorithm {
   RANDOM_MOUSE,
   BRUTEFORCE,
-  RIGHT_HAND_RULE
+  RIGHT_HAND_RULE,
+  TREMAUX
 };
 
-// Выбор алгоритма меняется только здесь.
-// Например:
-//Algorithm currentAlgorithm = RANDOM_MOUSE;
-//Algorithm currentAlgorithm = BRUTEFORCE;
-Algorithm currentAlgorithm = RIGHT_HAND_RULE;
+// Выбор алгоритма определяется здесь, расскомментируйте нужную строку
+// Algorithm currentAlgorithm = RANDOM_MOUSE;
+// Algorithm currentAlgorithm = RIGHT_HAND_RULE;
+// Algorithm currentAlgorithm = BRUTEFORCE;
+Algorithm currentAlgorithm = TREMAUX;
 
-// Состояние робота и устройств Webots.
+// Перечисление действий робота
+enum Action {
+  ACT_FORWARD,
+  ACT_LEFT,
+  ACT_RIGHT,
+  ACT_BACK
+};
+
+enum Heading { 
+  NORTH = 0,
+  EAST = 1,
+  SOUTH = 2,
+  WEST = 3
+};
+
+// Состояние датчиков (имеется ли препятствие с какой-то стороны)
+struct SensorsState {
+  bool front;
+  bool left;
+  bool right;
+};
+
+// Структура для описания узлов лабиринта
+struct Node {
+  int marks[4]; // 0: вперед, 1: направо, 2: назад, 3: налево (относительно входа)
+  Node() { 
+    for (int i = 0; i < 4; i++) marks[i] = 0; 
+  }
+};
+
+// Создание Webots объектов
 Robot *robot = new Robot();
 int timeStep = (int)robot->getBasicTimeStep();
 
 Motor *left_motor = robot->getMotor("left wheel motor");
 Motor *right_motor = robot->getMotor("right wheel motor");
 
-// Датчики приближения e-puck.
+// Создание датчиков
 DistanceSensor *ps0 = robot->getDistanceSensor("ps0");
 DistanceSensor *ps1 = robot->getDistanceSensor("ps1");
 DistanceSensor *ps2 = robot->getDistanceSensor("ps2");
@@ -41,172 +76,196 @@ DistanceSensor *ps5 = robot->getDistanceSensor("ps5");
 DistanceSensor *ps6 = robot->getDistanceSensor("ps6");
 DistanceSensor *ps7 = robot->getDistanceSensor("ps7");
 
-// Скорость движения.
-const double SPEED = 5.0;
+// Константы
+const double THRESHOLD = 90.0;  // Порог для активации датчиков
 
-// Порог срабатывания датчиков.
-const double THRESHOLD = 100.0;
+// Скорости ниже maxVelocity (= 6.28), адаптированные под работу алгоритмов
+const double RANDOM_SPEED = 6.2;
+const double BRUTE_SPEED = 5.9;
+const double WALL_SPEED = 4.4;
+const double TREMAUX_SPEED = 4.7;  // Используемая скорость для Тремо
 
-// Сколько шагов робот продолжает текущее действие.
-// Это нужно, чтобы робот не менял направление каждый такт симуляции.
-const int FORWARD_HOLD = 4;
-const int TURN_HOLD = 7;
-const int BACK_HOLD = 10;
+// Удержание действий
+const int RANDOM_FORWARD_HOLD = 8;
+const int RANDOM_TURN_HOLD = 6;
+const int RANDOM_BACK_HOLD = 10;
 
-// Возможные действия.
-enum Action {
-  ACT_FORWARD,
-  ACT_LEFT,
-  ACT_RIGHT,
-  ACT_BACK
-};
+const int BRUTE_FORWARD_HOLD = 6;
+const int BRUTE_TURN_HOLD = 9;
+const int BRUTE_BACK_HOLD = 12;
 
-// Структура для состояния датчиков.
-struct SensorsState {
-  bool front;
-  bool left;
-  bool right;
-};
+const int WALL_FORWARD_HOLD = 5;
+const int WALL_TURN_HOLD = 7;
+const int WALL_BACK_HOLD = 10;
 
-// Текущее действие и число оставшихся шагов.
+// Константы конкретно под Тремо
+const double DIST_THRESHOLD = 120.0; // Порог обнаружения стены
+const int TIME_STEP = 32;
+
+// Если робот недоворачивает — увеличь TURN_90_STEPS, если перелетает — уменьши.
+const int TURN_90_STEPS = 8;   // Шагов для поворота на 90 градусов
+const int CELL_STEPS = 24;      // Шагов для проезда одной клетки (узла)
+
+// Текущее действие
 Action currentAction = ACT_FORWARD;
 int actionStepsLeft = 0;
+double currentLeftSpeed = 0.0;
+double currentRightSpeed = 0.0;
 
-// Счетчик для систематического перебора направлений.
+// Память для bruteforce
 int bruteforcePhase = 0;
+int currentNodeId = 0;
+int stepCounter = 0;
 
-// Инициализация.
+// Состояние мира для Тремо
+int currentX = 0, currentY = 0;
+Heading currentHeading = NORTH;
+std::map<std::pair<int, int>, Node> mazeMap;
+
+// Прототипы
 void initAll();
-
-// Движение.
-void Forward();
+void setMotors(double leftSpeed, double rightSpeed);
+void Forward(double speed);
+void Left(double speed);
+void Right(double speed);
+void Back(double speed);
 void Stop();
-void Left();
-void Right();
-void Back();
+void Vel_stop();
 
-// Считывание датчиков.
 SensorsState readSensors();
-
-// Выполнение текущего действия.
 bool continueCurrentAction();
+void applyAction(Action action, int holdSteps, double leftSpeed, double rightSpeed);
 
-// Назначение действия с удержанием.
-void applyAction(Action action, int holdSteps);
-
-// Проверка препятствий.
 bool frontBlocked();
 bool leftBlocked();
 bool rightBlocked();
 
-// Реализация алгоритмов.
+// Логика выбора алгоритма
+const char *algorithmName(Algorithm a);
+Action chooseBruteforceAction(const SensorsState &s);
+Action chooseTremauxAction(const SensorsState &s);
+
 void runRandomMouse();
 void runBruteforce();
 void runRightHandRule();
+void runTremaux();
 
-// Выбор действия для bruteforce.
-Action chooseBruteforceAction(const SensorsState &s);
+void moveTremaux(Action a);
+int getNextNodeId();
 
-// Возвращает строку с названием алгоритма.
+// Логика выбора алгоритма в зависимости от заданного значения
 const char *algorithmName(Algorithm a) {
   switch (a) {
     case RANDOM_MOUSE: return "RANDOM_MOUSE";
     case BRUTEFORCE: return "BRUTEFORCE";
     case RIGHT_HAND_RULE: return "RIGHT_HAND_RULE";
+    case TREMAUX: return "TREMAUX";
     default: return "UNKNOWN";
   }
 }
 
-// Считывание состояния датчиков.
+// Запись скорости на моторы
+void setMotors(double leftSpeed, double rightSpeed) {
+  left_motor->setVelocity(leftSpeed);
+  right_motor->setVelocity(rightSpeed);
+}
+
+// Логика движений
+void Forward(double speed) { setMotors(speed, speed); }
+void Left(double speed)    { setMotors(-speed, speed); }
+void Right(double speed)   { setMotors(speed, -speed); }
+void Back(double speed)    { setMotors(-speed, -speed); }
+void Stop()                { setMotors(0.0, 0.0); }
+void Vel_stop() {
+  left_motor->setVelocity(0);
+  right_motor->setVelocity(0);
+}
+
+// Универсальная функция шага - позволяет двигшаться прямолинейно
+void execute(double leftS, double rightS, int steps) {
+    left_motor->setVelocity(leftS);
+    right_motor->setVelocity(rightS);
+    for (int i = 0; i < steps; i++) {
+        if (robot->step(TIME_STEP) == -1) exit(0);
+    }
+    Vel_stop();
+    // Короткая пауза (1 шаг), чтобы погасить инерцию перед следующим действием
+    robot->step(TIME_STEP); 
+}
+
+// Функции поворотов под Tremaux
+void turn90(bool right) {
+    if (right) {
+        execute(TREMAUX_SPEED, -TREMAUX_SPEED, TURN_90_STEPS);
+        currentHeading = static_cast<Heading>((currentHeading + 1) % 4);
+    } else {
+        execute(-TREMAUX_SPEED, TREMAUX_SPEED, TURN_90_STEPS);
+        currentHeading = static_cast<Heading>((currentHeading + 3) % 4);
+    }
+}
+
+void turn180() {
+    // Используем TURN_90_STEPS * 2 для разворота на месте
+    execute(TREMAUX_SPEED, -TREMAUX_SPEED, TURN_90_STEPS * 2);
+    currentHeading = static_cast<Heading>((currentHeading + 2) % 4);
+}
+
+
+// Чтение датчиков
 SensorsState readSensors() {
   SensorsState s;
-  s.front = frontBlocked();
-  s.left = leftBlocked();
-  s.right = rightBlocked();
+  s.front = (ps0->getValue() > THRESHOLD || ps7->getValue() > THRESHOLD);
+  s.left = (ps5->getValue() > THRESHOLD || ps6->getValue() > THRESHOLD);
+  s.right = (ps1->getValue() > THRESHOLD || ps2->getValue() > THRESHOLD);
   return s;
 }
 
-// Проверка переда.
+// Проверка препятствий
 bool frontBlocked() {
   return (ps0->getValue() > THRESHOLD || ps7->getValue() > THRESHOLD);
 }
 
-// Проверка левой стороны.
 bool leftBlocked() {
   return (ps5->getValue() > THRESHOLD || ps6->getValue() > THRESHOLD);
 }
 
-// Проверка правой стороны.
 bool rightBlocked() {
   return (ps1->getValue() > THRESHOLD || ps2->getValue() > THRESHOLD);
 }
 
-// Выполнить текущее действие еще один шаг.
+// Выполнить текущее действие еще один шаг
 bool continueCurrentAction() {
   if (actionStepsLeft <= 0)
     return false;
 
   actionStepsLeft--;
-
-  switch (currentAction) {
-    case ACT_FORWARD:
-      Forward();
-      break;
-    case ACT_LEFT:
-      Left();
-      break;
-    case ACT_RIGHT:
-      Right();
-      break;
-    case ACT_BACK:
-      Back();
-      break;
-  }
-
+  setMotors(currentLeftSpeed, currentRightSpeed);
   return true;
 }
 
 // Назначить действие и задать длительность.
-void applyAction(Action action, int holdSteps) {
+void applyAction(Action action, int holdSteps, double leftSpeed, double rightSpeed) {
   currentAction = action;
   actionStepsLeft = holdSteps;
-
-  switch (action) {
-    case ACT_FORWARD:
-      Forward();
-      break;
-    case ACT_LEFT:
-      Left();
-      break;
-    case ACT_RIGHT:
-      Right();
-      break;
-    case ACT_BACK:
-      Back();
-      break;
-  }
+  currentLeftSpeed = leftSpeed;
+  currentRightSpeed = rightSpeed;
+  setMotors(leftSpeed, rightSpeed);
 }
 
-// Случайное поведение.
-// Это базовый алгоритм: на развилке выбирает направление случайно.
-// Чтобы робот не дергался слишком сильно, действие удерживается несколько шагов.
-// Также есть небольшой приоритет движения вперед, если путь свободен.
+// RANDOM MOUSE
 void runRandomMouse() {
   SensorsState s = readSensors();
-
+  
   std::cout << "[RANDOM] F:" << s.front << " L:" << s.left << " R:" << s.right << std::endl;
 
-  // Если робот уже выполняет действие, продолжаем его.
   if (continueCurrentAction())
     return;
 
-  // Тупик.
   if (s.front && s.left && s.right) {
-    applyAction(ACT_BACK, BACK_HOLD);
+    applyAction(ACT_BACK, RANDOM_BACK_HOLD, -RANDOM_SPEED, -RANDOM_SPEED);
     return;
   }
 
-  // Список доступных направлений.
   Action options[3];
   int count = 0;
 
@@ -214,44 +273,31 @@ void runRandomMouse() {
   if (!s.left)  options[count++] = ACT_LEFT;
   if (!s.right) options[count++] = ACT_RIGHT;
 
-  // Если вдруг все закрыто, отъезжаем назад.
   if (count == 0) {
-    applyAction(ACT_BACK, BACK_HOLD);
+    applyAction(ACT_BACK, RANDOM_BACK_HOLD, -RANDOM_SPEED, -RANDOM_SPEED);
     return;
   }
 
-  // Если впереди свободно, чаще продолжаем ехать вперед.
-  // Это делает поведение менее рваным.
-  if (!s.front && (std::rand() % 100 < 60)) {
-    applyAction(ACT_FORWARD, FORWARD_HOLD + 2);
+  if (!s.front && (std::rand() % 100 < 70)) {
+    applyAction(ACT_FORWARD, RANDOM_FORWARD_HOLD + 2, RANDOM_SPEED, RANDOM_SPEED);
     return;
   }
 
-  // Иначе выбираем случайное направление из доступных.
   int choiceIndex = std::rand() % count;
   Action chosen = options[choiceIndex];
 
   if (chosen == ACT_FORWARD)
-    applyAction(ACT_FORWARD, FORWARD_HOLD);
+    applyAction(ACT_FORWARD, RANDOM_FORWARD_HOLD, RANDOM_SPEED, RANDOM_SPEED);
   else if (chosen == ACT_LEFT)
-    applyAction(ACT_LEFT, TURN_HOLD);
+    applyAction(ACT_LEFT, RANDOM_TURN_HOLD, -RANDOM_SPEED, RANDOM_SPEED);
   else if (chosen == ACT_RIGHT)
-    applyAction(ACT_RIGHT, TURN_HOLD);
+    applyAction(ACT_RIGHT, RANDOM_TURN_HOLD, RANDOM_SPEED, -RANDOM_SPEED);
   else
-    applyAction(ACT_BACK, BACK_HOLD);
+    applyAction(ACT_BACK, RANDOM_BACK_HOLD, -RANDOM_SPEED, -RANDOM_SPEED);
 }
 
-// Полный перебор.
-// Это не "настоящий" полный перебор всего лабиринта с картой,
-// а локальный систематический перебор направлений на развилке.
-// Для проекта этого достаточно как отдельной демонстрационной версии.
-// Логика: робот последовательно пробует варианты в фиксированном порядке,
-// но порядок немного меняется по фазам, чтобы поиск не был слишком однообразным.
+// BRUTEFORCE
 Action chooseBruteforceAction(const SensorsState &s) {
-  // Три фазы перебора:
-  // 0: вперед -> влево -> вправо -> назад
-  // 1: влево -> вправо -> вперед -> назад
-  // 2: вправо -> вперед -> влево -> назад
   Action order0[4] = {ACT_FORWARD, ACT_LEFT, ACT_RIGHT, ACT_BACK};
   Action order1[4] = {ACT_LEFT, ACT_RIGHT, ACT_FORWARD, ACT_BACK};
   Action order2[4] = {ACT_RIGHT, ACT_FORWARD, ACT_LEFT, ACT_BACK};
@@ -271,11 +317,9 @@ Action chooseBruteforceAction(const SensorsState &s) {
     if (a == ACT_LEFT && !s.left) return ACT_LEFT;
     if (a == ACT_RIGHT && !s.right) return ACT_RIGHT;
 
-    // Назад используем только если других вариантов нет.
     if (a == ACT_BACK && s.front && s.left && s.right) return ACT_BACK;
   }
 
-  // На всякий случай.
   if (!s.front) return ACT_FORWARD;
   if (!s.left) return ACT_LEFT;
   if (!s.right) return ACT_RIGHT;
@@ -283,63 +327,106 @@ Action chooseBruteforceAction(const SensorsState &s) {
   return ACT_BACK;
 }
 
-// Алгоритм полного перебора.
+// Запуск метода брутфорс
 void runBruteforce() {
   SensorsState s = readSensors();
-
+  
   std::cout << "[BRUTE] F:" << s.front << " L:" << s.left << " R:" << s.right << std::endl;
 
-  // Если уже выполняем действие, продолжаем его.
   if (continueCurrentAction())
     return;
 
-  // Если тупик, уходим назад.
   if (s.front && s.left && s.right) {
-    applyAction(ACT_BACK, BACK_HOLD);
+    applyAction(ACT_BACK, BRUTE_BACK_HOLD, -BRUTE_SPEED, -BRUTE_SPEED);
     return;
   }
 
-  // Выбираем направление систематически.
   Action chosen = chooseBruteforceAction(s);
 
-  switch (chosen) {
-    case ACT_FORWARD:
-      applyAction(ACT_FORWARD, FORWARD_HOLD);
-      break;
-    case ACT_LEFT:
-      applyAction(ACT_LEFT, TURN_HOLD);
-      break;
-    case ACT_RIGHT:
-      applyAction(ACT_RIGHT, TURN_HOLD);
-      break;
-    case ACT_BACK:
-      applyAction(ACT_BACK, BACK_HOLD);
-      break;
+  if (chosen == ACT_FORWARD) {
+    applyAction(ACT_FORWARD, BRUTE_FORWARD_HOLD, BRUTE_SPEED, BRUTE_SPEED);
+  } else if (chosen == ACT_LEFT) {
+    applyAction(ACT_LEFT, BRUTE_TURN_HOLD, -BRUTE_SPEED, BRUTE_SPEED);
+  } else if (chosen == ACT_RIGHT) {
+    applyAction(ACT_RIGHT, BRUTE_TURN_HOLD, BRUTE_SPEED, -BRUTE_SPEED);
+  } else {
+    applyAction(ACT_BACK, BRUTE_BACK_HOLD, -BRUTE_SPEED, -BRUTE_SPEED);
   }
 }
 
-// Правило правой руки.
-// Приоритет: вправо -> вперед -> влево -> назад.
-// Эта версия уже рабочая и стабильная.
+// RIGHT HAND RULE
 void runRightHandRule() {
   SensorsState s = readSensors();
-
+  
   std::cout << "[RIGHT] F:" << s.front << " L:" << s.left << " R:" << s.right << std::endl;
 
-  // Если робот уже выполняет действие, продолжаем его.
   if (continueCurrentAction())
     return;
 
-  // Приоритет правой руки.
   if (!s.right) {
-    applyAction(ACT_RIGHT, TURN_HOLD);
+    applyAction(ACT_RIGHT, 7, WALL_SPEED, -WALL_SPEED);
   } else if (!s.front) {
-    applyAction(ACT_FORWARD, FORWARD_HOLD);
+    applyAction(ACT_FORWARD, 4, WALL_SPEED, WALL_SPEED);
   } else if (!s.left) {
-    applyAction(ACT_LEFT, TURN_HOLD);
+    applyAction(ACT_LEFT, 7, -WALL_SPEED, WALL_SPEED);
   } else {
-    applyAction(ACT_BACK, BACK_HOLD);
+    applyAction(ACT_BACK, 10, -WALL_SPEED, -WALL_SPEED);
   }
+}
+
+void runTremaux() {
+    SensorsState s = readSensors();
+    
+    // Считаем точкой принятия решения любую развилку или тупик
+    bool isJunction = (!s.left || !s.right || s.front);
+
+    if (isJunction) {
+          Vel_stop();
+        std::pair<int, int> pos = {currentX, currentY};
+        Node &node = mazeMap[pos];
+
+        // 1. Отмечаем направление, откуда пришли
+        int backDir = (currentHeading + 2) % 4;
+        node.marks[backDir]++;
+
+        // 2. Ищем лучший путь (минимальное кол-во меток)
+        // 0-Forward, 1-Right, 2-Back, 3-Left
+        bool canGo[4] = {!s.front, !s.right, true, !s.left};
+        int bestRel = 2; 
+        int minMarks = 999;
+
+        for (int i = 0; i < 4; i++) {
+            if (canGo[i]) {
+                int absDir = (currentHeading + i) % 4;
+                if (node.marks[absDir] < minMarks) {
+                    minMarks = node.marks[absDir];
+                    bestRel = i;
+                }
+            }
+        }
+
+        // 3. Выполняем маневр
+        if (bestRel == 1) turn90(true);
+        else if (bestRel == 3) turn90(false);
+        else if (bestRel == 2) turn180();
+        
+        int chosenAbs = currentHeading;
+        node.marks[chosenAbs]++;
+
+
+        // Финальный проезд в выбранном направлении
+        execute(TREMAUX_SPEED, TREMAUX_SPEED, CELL_STEPS);
+        
+        // Обновляем координаты в сетке
+        if (currentHeading == NORTH) currentY++;
+        else if (currentHeading == EAST) currentX++;
+        else if (currentHeading == SOUTH) currentY--;
+        else if (currentHeading == WEST) currentX--;
+
+    } else {
+        // Обычный коридор без развилок
+        execute(TREMAUX_SPEED, TREMAUX_SPEED, 5); 
+    }
 }
 
 int main() {
@@ -359,6 +446,9 @@ int main() {
       case RIGHT_HAND_RULE:
         runRightHandRule();
         break;
+      case TREMAUX:
+        runTremaux();
+        break;
     }
   }
 
@@ -366,37 +456,6 @@ int main() {
   return 0;
 }
 
-// Движение влево.
-void Left() {
-  left_motor->setVelocity(-SPEED);
-  right_motor->setVelocity(SPEED);
-}
-
-// Движение вправо.
-void Right() {
-  left_motor->setVelocity(SPEED);
-  right_motor->setVelocity(-SPEED);
-}
-
-// Движение назад.
-void Back() {
-  left_motor->setVelocity(-SPEED);
-  right_motor->setVelocity(-SPEED);
-}
-
-// Остановка.
-void Stop() {
-  left_motor->setVelocity(0);
-  right_motor->setVelocity(0);
-}
-
-// Движение вперед.
-void Forward() {
-  left_motor->setVelocity(SPEED);
-  right_motor->setVelocity(SPEED);
-}
-
-// Инициализация датчиков и моторов.
 void initAll() {
   ps0->enable(timeStep);
   ps1->enable(timeStep);
@@ -410,6 +469,5 @@ void initAll() {
   left_motor->setPosition(INFINITY);
   right_motor->setPosition(INFINITY);
 
-  left_motor->setVelocity(0);
-  right_motor->setVelocity(0);
+  Vel_stop();
 }
