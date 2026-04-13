@@ -127,6 +127,11 @@ tags:
 - [Устройство робота e-puck. Оффициальная документация webots](https://cyberbotics.com/doc/guide/epuck?version=R2022b)
 - [Чертеж робота e-puck](https://www.researchgate.net/figure/The-mechanical-structure-of-the-e-puck-in-an-exploded-view_fig4_37468823)
 
+## Книги
+- A Tour of Cpp - Бьярне Страуструп
+
 ### Прочее
 - [Связанный проект "Робот, ищущий выход из лабиринта](https://is.ifmo.ru/download/maze.pdf)
+- [Оффициальная документация webots](https://cyberbotics.com/doc/guide/index)
 - [Оффициальная страница создателей робота e-puck](https://e-puck.gctronic.com/)
+- [Сайт по подсветке синтаксиса кода для документов](http://tohtml.com/cpp/)
