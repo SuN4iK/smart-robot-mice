@@ -14,42 +14,61 @@
 ## Запуск на Windows
 1. Установите webots:
     - Установите с [оффициального сайта](https://cyberbotics.com/)
+   
     - Или с помощью winget:
-    > winget install Cyberbotics.Webots
-2. Запустите webots, откройте мир - File > Open world... Выберите файл .wbt.
+
+   ```powershell
+    winget install Cyberbotics.Webots
+   ```
+   
+3. Запустите webots, откройте мир - File > Open world... Выберите файл .wbt.
 
 ## Запуск на Linux
 1. Установите webots одним из способов:
     - Установите с помощью apt (производные от debian дистрибутивы)
-    ```shell
+
+   ```shell
     sudo mkdir -p /etc/apt/keyrings
     cd /etc/apt/keyrings
     sudo wget -q https://cyberbotics.com/Cyberbotics.asc
     echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/Cyberbotics.asc] https://cyberbotics.com/debian binary-amd64/" | sudo tee /etc/apt/sources.list.d/Cyberbotics.list
     sudo apt install webots
     ```
-    > Возможен баг с отсутствием зависимости libsndio - фиксится sudo apt intall libsndio7.0
+    
+    Возможен баг с отсутствием зависимости libsndio - фиксится sudo apt intall libsndio7.0
+   
     - Cкачайте и установите релиз [snap пакета](https://github.com/cyberbotics/webots/releases/)
-    > Установите и запустите: 
+    Установите и запустите:
+
     ```shell
     sudo snap install --dangerous ./имя-файла.snap
     ```
-    - Или установите [релиз конкретно под вашу машину](https://github.com/cyberbotics/webots/releases/)
-    > Это может быть как deb пакет, так и простой appimage
-    - установите и запустите с помощью flatpak:
-    > Внимание! Установка через flatpak настоятельно не рекомендуется. Используйте только в крайних случаях. Возможны проблемы, так как flatpak запускает программу в изолированной среде. Читайте [справку](https://github.com/cyberbotics/webots/discussions) и [issues](https://github.com/cyberbotics/webots/issues)
+    
+    - Установите [релиз конкретно под вашу машину](https://github.com/cyberbotics/webots/releases/)
+    Это может быть как deb пакет, так и простой appimage
+
+    - Установите и запустите с помощью flatpak:
+    Внимание! Установка через flatpak настоятельно не рекомендуется. Используйте только в крайних случаях. Возможны проблемы, так как flatpak запускает программу в изолированной среде. Читайте [справку](https://github.com/cyberbotics/webots/discussions) и [issues](https://github.com/cyberbotics/webots/issues)
+
     ```shell
     flatpak install flathub com.cyberbotics.webots
     flatpak run com.cyberbotics.webots
     ```
+    
     - Если хотите, [Сбилдите самостоятельно](https://github.com/cyberbotics/webots/wiki)
-2. (Опционально) Добавьте переменную WEBOTS_HOME, если webots установлен через github-релиз или сбилжен самостоятельно
+
+3. (Опционально) Добавьте переменную WEBOTS_HOME, если webots установлен через github-релиз или сбилжен самостоятельно
+   
     ```shell
     export WEBOTS_HOME=/usr/local/webots
     ```
-3. Запустите webots, откройте мир - File > Open world... Выберите файл .wbt.
+    
+5. Запустите webots, откройте мир - File > Open world... Выберите файл .wbt.
 
-> Вам, возможно, потребуется скомпилировать в первый раз файл контроллера самостоятельно (my_controller.cpp). Подтяните все зависимости, требущиеся для компиляции (обычно хватает простого make и gcc, (base-devel)). Затем скомпилируйте: make
+> Вам, возможно, потребуется скомпилировать в первый раз файл контроллера самостоятельно (my_controller.cpp). Подтяните все зависимости, требущиеся для компиляции (обычно хватает простого make и gcc, (base-devel)). Затем скомпилируйте:
+> ```shell
+> make
+> ```
 
 ## Запуск на MacOs
 1. Скачайте и установите [.dmg образ](https://github.com/cyberbotics/webots/releases/)
