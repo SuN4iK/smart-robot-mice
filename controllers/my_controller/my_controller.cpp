@@ -25,9 +25,9 @@ enum Algorithm {
 
 // Выбор алгоритма определяется здесь, расскомментируйте нужную строку
 // Algorithm currentAlgorithm = RANDOM_MOUSE;
-// Algorithm currentAlgorithm = RIGHT_HAND_RULE;
+Algorithm currentAlgorithm = RIGHT_HAND_RULE;
 // Algorithm currentAlgorithm = BRUTEFORCE;
-Algorithm currentAlgorithm = TREMAUX;
+// Algorithm currentAlgorithm = TREMAUX;
 
 // Перечисление действий робота
 enum Action {
