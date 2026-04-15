@@ -22,7 +22,7 @@
     winget install Cyberbotics.Webots
    ```
    
-1. Запустите webots, откройте мир - File > Open world... Выберите файл .wbt.
+2. Запустите webots, откройте мир - File > Open world... Выберите файл .wbt.
 
 ## Запуск на Linux
 1. Установите webots одним из способов:
@@ -38,7 +38,7 @@
 
     >Возможен баг с отсутствием зависимости libsndio - фиксится sudo apt install libsndio7.0
 
----
+    ---
 
     - Cкачайте и установите релиз [snap пакета](https://github.com/cyberbotics/webots/releases/)
     Установите и запустите:
