@@ -28,7 +28,7 @@
 1. Установите webots одним из способов:
     - Установите с помощью apt (производные от debian дистрибутивы)
 
-   ```shell
+    ```shell
     sudo mkdir -p /etc/apt/keyrings
     cd /etc/apt/keyrings
     sudo wget -q https://cyberbotics.com/Cyberbotics.asc
@@ -36,7 +36,7 @@
     sudo apt install webots
     ```
 
-> Возможен баг с отсутствием зависимости libsndio - фиксится sudo apt install libsndio7.0
+    >Возможен баг с отсутствием зависимости libsndio - фиксится sudo apt install libsndio7.0
 
     ---
 
