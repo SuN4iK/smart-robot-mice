@@ -8,11 +8,11 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
 
 WorldInfo {
-  basicTimeStep 3
+  basicTimeStep 4
 }
 Viewpoint {
-  orientation 0.6821794447188781 -0.005184732304221041 -0.731166413174167 3.126926297426415
-  position 8.288669176793762 -0.02151946851543096 2.158634681814744
+  orientation 0.6930221367457736 -0.00853925681600938 -0.7208657288797634 3.133981008366396
+  position 8.448693035261885 -0.04248376507667698 1.0684070045294685
   follow "e-puck"
 }
 TexturedBackground {
@@ -546,18 +546,6 @@ SolidBox {
   size 0.2 0.03 0.3
 }
 SolidBox {
-  translation -4.73 -0.150009 0.02
-  rotation 0 0 -1 -5.307179586466759e-06
-  name "box(123)"
-  size 0.2 0.03 0.3
-}
-SolidBox {
-  translation -4.73 0.049991 0.02
-  rotation 0 0 -1 -5.307179586466759e-06
-  name "box(130)"
-  size 0.2 0.03 0.3
-}
-SolidBox {
   translation -4.73 0.259991 0.02
   rotation 0 0 -1 -5.307179586466759e-06
   name "box(132)"
@@ -846,11 +834,7 @@ SolidBox {
   size 0.3 0.03 0.3
 }
 DEF E_PUCK E-puck {
-  hidden position_0_0 3343.8943678307837
-  hidden position_0_1 3288.2269791761414
-  hidden rotation_1 0 1 0 1.2397844112437162
-  hidden rotation_2 0 -0.9999999999999999 0 4.162121785961902
-  translation 8.45421 -0.0249351 0.018014
+  translation 8.45437 -0.0349337 0.0179766
   rotation 0.0005027551058908689 -0.0018237303841162282 0.9999982106207937 -3.1347453071795863
   controller "my_controller"
   window "botstudio"

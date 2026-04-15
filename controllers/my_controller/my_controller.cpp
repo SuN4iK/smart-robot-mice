@@ -25,9 +25,9 @@ enum Algorithm {
 
 // Выбор алгоритма определяется здесь, расскомментируйте нужную строку
 // Algorithm currentAlgorithm = RANDOM_MOUSE;
-Algorithm currentAlgorithm = RIGHT_HAND_RULE;
+// Algorithm currentAlgorithm = RIGHT_HAND_RULE;
 // Algorithm currentAlgorithm = BRUTEFORCE;
-// Algorithm currentAlgorithm = TREMAUX;
+Algorithm currentAlgorithm = TREMAUX;
 
 // Перечисление действий робота
 enum Action {
@@ -103,8 +103,11 @@ const double DIST_THRESHOLD = 120.0; // Порог обнаружения сте
 const int TIME_STEP = 32;
 
 // Если робот недоворачивает — увеличь TURN_90_STEPS, если перелетает — уменьши.
-const int TURN_90_STEPS = 8;   // Шагов для поворота на 90 градусов
-const int CELL_STEPS = 24;      // Шагов для проезда одной клетки (узла)
+const int TURN_90_STEPS = 15;   // Шагов для поворота на 90 градусов
+const int CELL_STEPS = 50;      // Шагов для проезда одной клетки (узла)
+                                // Изменить на для 4 лабиринта
+                                // Изменить basicTimeStep на 4 для Tremaux
+                                // Закрыть 4 лабиринт
 
 // Текущее действие
 Action currentAction = ACT_FORWARD;
@@ -376,6 +379,8 @@ void runRightHandRule() {
 
 void runTremaux() {
     SensorsState s = readSensors();
+    
+    std::cout << "[RANDOM] F:" << s.front << " L:" << s.left << " R:" << s.right << std::endl;
     
     // Считаем точкой принятия решения любую развилку или тупик
     bool isJunction = (!s.left || !s.right || s.front);
