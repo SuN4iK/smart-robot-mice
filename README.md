@@ -38,7 +38,7 @@
 
     >Возможен баг с отсутствием зависимости libsndio - фиксится sudo apt install libsndio7.0
 
----
+    ---
 
     - Cкачайте и установите релиз [snap пакета](https://github.com/cyberbotics/webots/releases/)
     Установите и запустите:
