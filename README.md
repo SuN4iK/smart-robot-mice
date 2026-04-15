@@ -14,7 +14,7 @@
 1. Установите webots:
     - Установите с [оффициального сайта](https://cyberbotics.com/)
 
-    ---
+---
    
     - Или с помощью winget:
 
@@ -47,22 +47,22 @@
     sudo snap install --dangerous ./имя-файла.snap
     ```
 
-    ---
+---
    
     - Установите [релиз конкретно под вашу машину](https://github.com/cyberbotics/webots/releases/)
     Это может быть как deb пакет, так и простой appimage
 
-    ---
+---
 
     - Установите и запустите с помощью flatpak:
-    внимание! Установка через flatpak настоятельно не рекомендуется. Используйте только в крайних случаях. Возможны проблемы, так как flatpak запускает программу в изолированной среде. Читайте [справку](https://github.com/cyberbotics/webots/discussions) и [issues](https://github.com/cyberbotics/webots/issues)
+    >внимание! Установка через flatpak настоятельно не рекомендуется. Используйте только в крайних случаях. Возможны проблемы, так как flatpak запускает программу в изолированной среде. Читайте [справку](https://github.com/cyberbotics/webots/discussions) и [issues](https://github.com/cyberbotics/webots/issues)
 
     ```shell
     flatpak install flathub com.cyberbotics.webots
     flatpak run com.cyberbotics.webots
     ```
 
-    ---
+---
 
     - Если хотите, [Сбилдите самостоятельно](https://github.com/cyberbotics/webots/wiki)
 
