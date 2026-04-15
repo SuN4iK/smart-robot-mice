@@ -38,7 +38,7 @@
 
     >Возможен баг с отсутствием зависимости libsndio - фиксится sudo apt install libsndio7.0
 
-    ---
+---
 
     - Cкачайте и установите релиз [snap пакета](https://github.com/cyberbotics/webots/releases/)
     Установите и запустите:
@@ -55,7 +55,7 @@
     ---
 
     - Установите и запустите с помощью flatpak:
-    >внимание! Установка через flatpak настоятельно не рекомендуется. Используйте только в крайних случаях. Возможны проблемы, так как flatpak запускает программу в изолированной среде. Читайте [справку](https://github.com/cyberbotics/webots/discussions) и [issues](https://github.com/cyberbotics/webots/issues)
+    >Внимание! Установка через flatpak настоятельно не рекомендуется. Используйте только в крайних случаях. Возможны проблемы, так как flatpak запускает программу в изолированной среде. Читайте [справку](https://github.com/cyberbotics/webots/discussions) и [issues](https://github.com/cyberbotics/webots/issues)
 
     ```shell
     flatpak install flathub com.cyberbotics.webots
