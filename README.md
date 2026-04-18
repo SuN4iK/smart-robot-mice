@@ -80,5 +80,5 @@
 > ```
 
 ## Запуск на MacOs
-1. Скачайте и установите [.dmg образ](https://github.com/cyberbotics/webots/releases/)
+1. Скачайте и установите [.dmg образ](https://github.com/cyberbotics/webots/releases/) webots
 2. Запустите webots, откройте мир - File > Open world... Выберите файл .wbt.
