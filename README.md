@@ -1,3 +1,6 @@
+**The README is only for russian speakers now - will be multilanguage in future**
+**README только для русскоговорящих сейчас - будет многоязычным в будущем**
+
 ## 📚 Документация по проекту
 
 >Ознакомтесь, пожалуйста, с [дорожной картой проекта](./ROADMAP.md)
