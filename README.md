@@ -1,5 +1,5 @@
-**The README is only for russian speakers now - will be multilanguage in future**
-**README только для русскоговорящих сейчас - будет многоязычным в будущем**
+#### **The README is only for russian speakers now - will be multilanguage in future**
+#### **README только для русскоговорящих сейчас - будет многоязычным в будущем**
 
 ## 📚 Документация по проекту
 
